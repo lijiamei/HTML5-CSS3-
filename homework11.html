@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #ddd;
+        }
+        
+        header {
+            width: 100%;
+            background-color: #f8f8f8;
+        }
+        
+        #top {
+            width: 100%;
+            height: 45px;
+            background-color: rgb(40, 40, 40);
+        }
+        
+        #top1 {
+            width: 1200px;
+            margin: 0 auto;
+            height: 45px;
+        }
+        
+        #top img {
+            float: left;
+            margin: 8px 5px 0 900px;
+        }
+        
+        #top p {
+            float: left;
+            color: white;
+            line-height: 45px;
+        }
+        
+        .p1 {
+            font-size: 18px;
+            margin: 0 5px 0 5px;
+        }
+        
+        .p2 {
+            margin: 0 5px 0 5px;
+        }
+        
+        #nav1 {
+            height: 80px;
+            border: none;
+        }
+        
+        .navbar-header img {
+            margin-top: 10px;
+            margin-right: 150px;
+        }
+        
+        .nav li {
+            margin: 15px 30px;
+        }
+        
+        #ul1>li>a {
+            color: black;
+        }
+        
+        #ul1>li>a:hover {
+            color: #e74b17;
+            border-bottom: 3px solid #e74b17;
+        }
+        
+        #ul1>li>a:focus {
+            color: #e74b17;
+            border-bottom: 3px solid #e74b17;
+        }
+        
+        #btn1 {
+            margin-top: 20px;
+            border: none;
+        }
+        
+        #btn2 {
+            width: 165px;
+            height: 50px;
+            color: white;
+            font-size: 22px;
+            background-color: #e74b17;
+        }
+        
+        .you {
+            height: 450px;
+            margin-top: 125px;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        .you-img1 {
+            position: absolute;
+            top: 220px;
+            left: 20px;
+        }
+        
+        .item img {
+            width: 100%;
+        }
+        
+        .youy {
+            width: 570px;
+            height: 170px;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 80px;
+            left: 190px;
+            text-align: left;
+        }
+        
+        .you1 h1 {
+            font-size: 48px;
+            margin-bottom: 35px;
+        }
+        
+        .you1 p:nth-child(2) {
+            font-size: 18px;
+            width: 300px;
+            border-top: 1px solid white;
+            padding-top: 15px;
+        }
+        
+        .you1 p:nth-child(3) {
+            font-size: 18px;
+            width: 400px;
+            border-bottom: 1px solid white;
+            padding-bottom: 15px;
+        }
+        
+        .search1 {
+            width: 590px;
+            height: 50px;
+            position: absolute;
+            bottom: 70px;
+            left: 420px;
+        }
+        
+        .you-btn button {
+            height: 50px;
+        }
+        
+        .you-btn button:nth-child(1) {
+            width: 150px;
+            background-color: #d3d3d8;
+        }
+        
+        .you-btn button:nth-child(1) img {
+            height: 25px;
+            width: 20px;
+            float: left;
+            margin: 5px 0 0 25px;
+        }
+        
+        .you-btn button:nth-child(1) p {
+            font-size: 16px;
+            line-height: 40px;
+        }
+        
+        .you-btn button:nth-child(2) {
+            width: 310px;
+            background-color: #e1e1e1;
+            margin: 0;
+            padding: 0px;
+            border: 0;
+        }
+        
+        .you-btn button:nth-child(2) input {
+            width: 310px;
+            height: 50px;
+        }
+        
+        .you-btn button:nth-child(3) {
+            width: 130px;
+            background-color: #e74b17;
+        }
+        
+        .you-btn button:nth-child(3) img {
+            width: 30px;
+            height: 30px;
+        }
+        
+        .bian1 {
+            width: 500px;
+            height: 100px;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 30px;
+            left: 46px;
+            text-align: left;
+        }
+        
+        .bian1 h1 {
+            font-size: 34px;
+        }
+        
+        .bian1 p:nth-child(2) {
+            font-size: 26px;
+        }
+        
+        #sbanner {
+            width: 1200px;
+            margin: 0 auto;
+            margin-top: 30px;
+            height: 365px;
+            position: relative;
+        }
+        
+        .sbanner1 {
+            position: absolute;
+            top: 30px;
+            right: 345px;
+        }
+        
+        .sbanner2 {
+            float: right;
+            width: 265px;
+            height: 364px;
+            background-color: rgb(20, 49, 109);
+        }
+        
+        .sbanner2 img {
+            margin: 75px 0 0 95px;
+        }
+        
+        .sbanner2 p {
+            font-size: 28px;
+            color: white;
+            margin-left: 90px;
+        }
+        
+        .sbanner2 button {
+            width: 180px;
+            height: 55px;
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: 3px;
+            color: white;
+            margin-left: 55px;
+            margin-top: 50px;
+        }
+        
+        #sbannerbian {
+            width: 100%;
+            height: 200px;
+            background-color: white;
+            margin: 20px 0;
+        }
+        
+        #sbannerbian img {
+            float: left;
+            margin: 45px 0 0 40px;
+        }
+        
+        #sbannerbian div {
+            float: left;
+            padding-top: 30px;
+            padding-left: 20px;
+            margin-left: 20px;
+        }
+        
+        #sbannerbian div h3 {
+            margin-bottom: 10px;
+            color: rgb(34, 75, 158);
+        }
+        
+        #sbannerbian div p {
+            color: #84858a;
+        }
+        
+        #sbannerbian button {
+            font-size: 20px;
+            width: 160px;
+            height: 55px;
+            background-color: transparent;
+            border: 1px solid rgb(185, 180, 180);
+            border-radius: 5px;
+            color: rgb(138, 128, 128);
+            margin-left: 30px;
+            margin-top: 70px;
+        }
+        
+        #hot-routes {
+            width: 1200px;
+            margin: 0 auto;
+            height: 1155px;
+            position: relative;
+        }
+        
+        .routes1 {
+            width: 1200px;
+            height: 135px;
+            text-align: center;
+        }
+        
+        .routes1 p:nth-child(1) {
+            font-size: 30px;
+            padding-top: 25px;
+        }
+        
+        .rd {
+            width: 1200px;
+            height: 1020px;
+            position: relative;
+        }
+        
+        .r1 {
+            width: 590px;
+            height: 490px;
+            float: left;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .r2 {
+            width: 605px;
+            height: 290px;
+            float: left;
+            margin-left: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .r3 {
+            width: 605px;
+            height: 355px;
+            float: left;
+            margin-top: 5px;
+            margin-left: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .r4 {
+            width: 590px;
+            height: 525px;
+            float: left;
+            position: absolute;
+            top: 493px;
+            overflow: hidden;
+        }
+        
+        .r5 {
+            width: 605px;
+            height: 365px;
+            float: left;
+            position: absolute;
+            top: 655px;
+            left: 590px;
+            margin-left: 5px;
+            overflow: hidden;
+        }
+        
+        .rb {
+            color: white;
+        }
+        
+        .rb1 {
+            width: 588px;
+            height: 100px;
+            background-color: black;
+        }
+        
+        .rb2 {
+            width: 588px;
+            height: 90px;
+            background-color: black;
+        }
+        
+        .rb p {
+            margin-left: 40px;
+            color: white;
+        }
+        
+        .rb p:nth-child(1) {
+            padding-top: 20px;
+        }
+        
+        .rb span {
+            font-size: 18px;
+        }
+        
+        .ra1 {
+            width: 605px;
+            height: 90px;
+            position: absolute;
+            top: 200px;
+            background-color: rgba(50, 50, 50, 0.5);
+        }
+        
+        .ra2 {
+            width: 605px;
+            height: 85px;
+            position: absolute;
+            top: 270px;
+            background-color: rgba(50, 50, 50, 0.5);
+        }
+        
+        .ra3 {
+            width: 605px;
+            height: 85px;
+            position: absolute;
+            top: 280px;
+            background-color: rgba(50, 50, 50, 0.5);
+        }
+        
+        #bianroutes {
+            width: 100%;
+            height: 1070px;
+            background-color: white;
+        }
+        
+        .brd {
+            width: 670px;
+            margin: 0 auto;
+        }
+        
+        .brd div:nth-child(1) {
+            width: 670px;
+            height: 100px;
+            padding-top: 30px;
+        }
+        
+        .brd div:nth-child(1) p {
+            border-left: 3px solid #e74b17;
+            padding-left: 10px;
+            font-size: 28px;
+        }
+        
+        .brd1 {
+            height: 400px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+        
+        .brd1 img {
+            width: 670px;
+            height: 400px;
+        }
+        
+        .brd1 div {
+            width: 670px;
+            height: 115px;
+            color: white;
+            position: absolute;
+            bottom: 0px;
+            background-color: rgba(10, 10, 10, 0.8);
+        }
+        
+        .brd1 div p:nth-child(1) {
+            width: 400px;
+            height: 115px;
+            font-size: 24px;
+            margin: 20px;
+            float: left;
+        }
+        
+        .brd1 div p:nth-child(2) {
+            width: 200px;
+            height: 115px;
+            font-size: 16px;
+            margin-top: 40px;
+            float: left;
+        }
+        
+        .brd1 div span {
+            font-size: 28px;
+        }
+        
+        .brd button {
+            font-size: 20px;
+            width: 225px;
+            height: 50px;
+            background-color: transparent;
+            border: 1px solid rgb(185, 180, 180);
+            border-radius: 5px;
+            color: rgb(138, 128, 128);
+            margin-left: 220px;
+            margin-top: 30px;
+        }
+        
+        .xw {
+            width: 100%;
+            height: 1495px;
+            background-image: url(img/back.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-top: -100px;
+        }
+        
+        #xw1 {
+            width: 1200px;
+            margin: 0 auto;
+            height: 1495px;
+        }
+        
+        .hpt {
+            width: 1200px;
+            height: 265px;
+            text-align: center;
+        }
+        
+        .hpt p:nth-child(1) {
+            font-size: 30px;
+            padding-top: 135px;
+        }
+        
+        .hpt p:nth-child(2) {
+            font-size: 15px;
+            padding-top: 10px;
+        }
+        
+        .hd1 {
+            width: 1200px;
+            height: 350px;
+        }
+        
+        .hd1 img {
+            float: left;
+        }
+        
+        .hd1 div {
+            width: 700px;
+            float: left;
+            height: 350px;
+            background-color: rgba(28, 80, 128, 0.8);
+        }
+        
+        .hd1 p:nth-child(1) {
+            text-align: center;
+            color: white;
+            font-size: 28px;
+            margin-top: 90px;
+        }
+        
+        .hd1 p:nth-child(2) {
+            color: white;
+            margin: 0 95px;
+            line-height: 35px;
+            font-size: 16px;
+        }
+        
+        .hd2 {
+            width: 1200px;
+            height: 475px;
+            overflow: hidden;
+            margin: 3px 0;
+        }
+        
+        .hd3 {
+            width: 1200px;
+            height: 399px;
+            background-color: rgb(28, 80, 128);
+            position: relative;
+        }
+        
+        .hp1 {
+            width: 325px;
+            height: 399px;
+            position: absolute;
+            left: 110px;
+        }
+        
+        .hp img:nth-child(1) {
+            position: absolute;
+            top: 40px;
+            left: 65px;
+        }
+        
+        .hp img:nth-child(2) {
+            position: absolute;
+            top: 90px;
+            left: 130px;
+        }
+        
+        .hp p:nth-child(3) {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 165px;
+            left: 120px;
+        }
+        
+        .hp p:nth-child(4) {
+            color: white;
+            position: absolute;
+            top: 275px;
+            text-align: center;
+        }
+        
+        .hp2 {
+            width: 325px;
+            height: 399px;
+            position: absolute;
+            left: 435px;
+        }
+        
+        .hp3 {
+            width: 325px;
+            height: 399px;
+            position: absolute;
+            left: 760px;
+        }
+        
+        .hp1 p:nth-child(4) {
+            padding-left: 25px;
+        }
+        
+        .hp2 p:nth-child(4) {
+            padding-left: 77px;
+        }
+        
+        .hp3 p:nth-child(4) {
+            padding-left: 67px;
+        }
+        
+        #bianxw {
+            width: 670px;
+            margin: 0 auto;
+        }
+        
+        #bianxw div:nth-child(1) {
+            width: 670px;
+            height: 100px;
+            padding-top: 30px;
+        }
+        
+        #bianxw div:nth-child(1) p {
+            border-left: 3px solid #e74b17;
+            padding-left: 10px;
+            font-size: 28px;
+        }
+        
+        #bianxw div:nth-child(1) span {
+            font-size: 18px;
+        }
+        
+        .bhd {
+            margin-top: 20px;
+        }
+        
+        .bhp1 {
+            text-align: center;
+            font-size: 28px;
+            margin-top: 60px;
+            margin-bottom: 30px;
+        }
+        
+        .bhp2 {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        
+        .bhimg {
+            width: 100%;
+            height: 330px;
+        }
+        
+        .bhd div {
+            width: 100%;
+            height: 190px;
+            border-bottom: 1px solid #bdbdbe;
+        }
+        
+        .bhd div img {
+            margin: 50px 80px 60px 100px;
+            float: left;
+        }
+        
+        .bhd div p {
+            float: left;
+            margin-top: 50px;
+            font-size: 18px;
+        }
+        
+        footer {
+            width: 100%;
+            background-color: rgb(52, 50, 53);
+        }
+        
+        #footer {
+            width: 1200px;
+            height: 530px;
+            margin: 0 auto;
+            color: white;
+        }
+        
+        .fd1 {
+            width: 1200px;
+            height: 150px;
+        }
+        
+        .fd1 p:nth-child(1) {
+            width: 107px;
+            height: 150px;
+            float: left;
+            line-height: 150px;
+            font-size: 18px;
+            text-align: center;
+            margin: 0px;
+        }
+        
+        .fd1 img {
+            margin-top: 60px;
+            margin-right: 16px;
+        }
+        
+        .fd1 span {
+            padding: 0 35.5px;
+        }
+        
+        #fsp {
+            margin-top: 8px;
+        }
+        
+        .fd2 {
+            width: 1200px;
+            height: 75px;
+        }
+        
+        .fd3 {
+            width: 1200px;
+            height: 50px;
+        }
+        
+        .fd4 {
+            width: 1200px;
+            height: 100px;
+        }
+        
+        .footer-line {
+            background-color: grey;
+        }
+        
+        #line1 {
+            top: 0px;
+            width: 1270px;
+            margin-left: -40px;
+            border-top: 1px solid grey;
+        }
+        
+        .fd2 p:nth-child(1) {
+            width: 107px;
+            height: 75px;
+            float: left;
+            font-size: 18px;
+            text-align: center;
+            margin: 0px;
+        }
+        
+        .fd3 p:nth-child(1) {
+            width: 107px;
+            height: 50px;
+            float: left;
+            font-size: 18px;
+            text-align: center;
+            margin: 0px;
+        }
+        
+        .fd4 p:nth-child(1) {
+            width: 107px;
+            height: 100px;
+            float: left;
+            font-size: 18px;
+            text-align: center;
+            margin: 0px;
+        }
+        
+        .fd5 {
+            width: 1200px;
+            height: 160px;
+        }
+        
+        .fd5 p {
+            font-size: 16px;
+            text-align: center;
+            padding-top: 40px;
+        }
+        
+        #bianfooter {
+            width: 670px;
+            margin: 0 auto;
+        }
+        
+        #bianfooter p {
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            padding-top: 100px;
+            line-height: 30px;
+        }
+        
+        @media screen and (max-width:750px) {
+            #top {
+                display: none;
+            }
+            header {
+                height: 80px;
+            }
+            .you {
+                height: 250px;
+                margin-top: 80px;
+            }
+            .you1 {
+                display: none;
+            }
+            .bian1 {
+                display: block;
+            }
+            .search1 {
+                top: 180px;
+                left: 40px;
+            }
+            #sbanner {
+                display: none;
+            }
+            #sbannerbian {
+                display: block;
+            }
+            #hot-routes {
+                display: none;
+            }
+            #bianroutes {
+                display: block;
+            }
+            .xw {
+                background-color: white;
+                margin-top: 20px;
+                height: 1830px;
+            }
+            #xw1 {
+                display: none;
+            }
+            #bianxw {
+                display: block;
+            }
+            #footer {
+                display: none;
+            }
+            #bianfooter {
+                display: block;
+            }
+            footer {
+                height: 330px;
+            }
+        }
+        
+        @media screen and (min-width:750px) {
+            #top {
+                display: block;
+            }
+            header {
+                height: 125px;
+            }
+            .you {
+                height: 450px;
+                margin-top: 125px;
+            }
+            .you1 {
+                display: block;
+            }
+            .bian1 {
+                display: none;
+            }
+            .search1 {
+                bottom: 70px;
+                left: 420px;
+            }
+            #sbanner {
+                display: block;
+            }
+            #sbannerbian {
+                display: none;
+            }
+            #hot-routes {
+                display: block;
+            }
+            #bianroutes {
+                display: none;
+            }
+            .xw {
+                height: 1495px;
+            }
+            #xw1 {
+                display: block;
+            }
+            #bianxw {
+                display: none;
+            }
+            #footer {
+                display: block;
+            }
+            #bianfooter {
+                display: none;
+            }
+            footer {
+                height: 530px;
+            }
+        }
+    </style>
+</head>
+<script src="jquery.js"></script>
+<script src="bootstrap.js"></script>
+
+<body>
+    <header class="navbar-fixed-top">
+        <div id="top">
+            <div id="top1">
+                <img src="img/tell.png">
+                <p class="p1">400-808-8682</p>
+                <p class="p2">请登录</p>
+                <p class="p2">|</p>
+                <p class="p2">注册</p>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-default" id="nav1">
+                <div class="navbar-header">
+                    <button type="button" id="btn1" class="navbar-toggle " data-toggle="collapse" data-target="#col_1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img src="img/logo.png" alt="英华逸游" />
+                    <button type="button" id="btn2" class="navbar-toggle " style="border-radius: 15%;">快速定制</button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs1">
+                    <ul class="nav navbar-nav" id="ul1">
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">热门线路</a></li>
+                        <li><a href="#">签证推荐</a></li>
+                        <li><a href="#">使命愿景</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <div id="first" class="carousel slide you" data-ride="carousel" data-interval="2000">
+        <div class="carousel-inner">
+            <div class="item active">
+                <img alt="banner" src="img/banner.jpg" class="item-img" style="height: 450px;">
+                <div class="carousel-caption you1 youy">
+                    <h1>悠游古欧洲 遍览德法瑞意</h1>
+                    <p>巴黎卢浮宫、塞纳河游船、凡尔赛宫</p>
+                    <p>少女峰、大运河游船、金色列车、西庸城堡</p>
+                </div>
+                <div class="carousel-caption bian1">
+                    <h1>悠游古欧洲 遍览德法瑞意</h1>
+                    <p>全程升级热早+1晚5星酒店</p>
+                </div>
+                <div class="search1">
+                    <div class="btn-group you-btn">
+                        <button type="button" class="btn">
+                            <img src="img/position.png" alt="position">
+                            <p>目的地</p>
+                        </button>
+                        <button type="button" class="btn">
+                            <input type="text" placeholder="  |  日本   美国   英国   地中海"/>
+                        </button>
+                        <button type="button" class="btn">
+                            <img src="img/search.png" alt="search">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="sbanner">
+        <img src="img/Sbanner2.jpg" alt="Sbanner2">
+        <div class="sbanner1" style="color: white;">
+            <h2>机场接送 省心省力</h2>
+            <p>提供上海、苏州、无锡各市</p>
+            <p>往返机、码头接送服务、更有包车服务</p>
+        </div>
+        <div class="sbanner2">
+            <img src="img/car.png" alt="car">
+            <p>车辆接送</p>
+            <button style="border-radius: 15%;">查看详情</button>
+        </div>
+    </div>
+    <div id="sbannerbian">
+        <img src="img/carH.png" alt="carH">
+        <div>
+            <h3>机场接送 省心省力</h3>
+            <p style="color: grey;">提供上海、苏州、无锡各市</p>
+            <p style="color: grey;">往返机场、码头接送服务，更有包车服务</p>
+        </div>
+        <button>查看详情</button>
+    </div>
+
+
+
+
+    <div id="hot-routes">
+        <div class="routes1">
+            <p>热 门 线 路</p>
+            <p>Popular tourist routes</p>
+        </div>
+        <div class="rd">
+            <div class="r1">
+                <img src="img/hot1.jpg" alt="hot1">
+                <div class="rb rb1">
+                    <p>海南三亚5天4晚，纯玩、4晚红树林度假王国</p>
+                    <p>￥<span>2580</span> / 人起</p>
+                </div>
+            </div>
+            <div class="r2">
+                <img src="img/hot3.jpg" alt="hot3">
+                <div class="rb ra1">
+                    <p>曼谷+芭提雅 国际五星，赠送2220大礼包，绝无自费</p>
+                    <p>￥<span>2790</span> / 人起</p>
+                </div>
+            </div>
+            <div class="r3">
+                <img src="img/hot4.jpg" alt="hot4">
+                <div class="rb ra2">
+                    <p>日本本州游 樱花、寿司、温泉、美食</p>
+                    <p>￥<span>5399</span> / 人起</p>
+                </div>
+            </div>
+            <div class="r4">
+                <img src="img/hot2.jpg" alt="hot2">
+                <div class="rb rb2">
+                    <p>德法意瑞欧洲4国，ABCD任意路线由您挑选</p>
+                    <p>￥<span>7999</span> / 人起</p>
+                </div>
+            </div>
+            <div class="r5">
+                <img src="img/hot5.jpg" alt="hot5">
+                <div class="rb ra3">
+                    <p>斯里兰卡7天6晚全景游 保证入住2晚香格里拉</p>
+                    <p>￥<span>7999</span> / 人起</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bianroutes">
+        <div class="brd">
+            <div>
+                <p>热门线路</p>
+                <hr>
+            </div>
+            <div class="brd1">
+                <img src="img/hot1.jpg" alt="hot1">
+                <div>
+                    <p>海南三亚5天4晚<br/>纯玩、4晚红树林度假王国</p>
+                    <p>￥<span>2580</span> / 人起</p>
+                </div>
+            </div>
+            <div class="brd1">
+                <img src="img/hot2.jpg" alt="hot2">
+                <div>
+                    <p>德法意瑞欧洲4国<br/>ABCD任意路线由您挑选</p>
+                    <p>￥<span>7999</span> / 人起</p>
+                </div>
+            </div>
+            <button>查看更多 &gt;</button>
+        </div>
+    </div>
+
+
+
+    <div class="xw" id="hope">
+        <div id="xw1">
+            <div class="hpt">
+                <p>使命与愿景</p>
+                <p>让旅游回归本质，体验纯粹旅游</p>
+            </div>
+            <div class="hd">
+                <div class="hd1">
+                    <img src="img/mission1.jpg" alt="mission1">
+                    <div>
+                        <p>服务理念及优势</p>
+                        <p style="line-height: 2em;"> &nbsp;&nbsp;“英华逸游”通过重新打造旅游全程中的产品线路设计、出行交通方案、陪游向导服务、增值关怀项目等，为客户提供高品质的旅游体验。英华逸游在泰国、欧洲、等多个国家拥有丰富的旅游资源，同时致力于给用户提供性价比高的产品和服务。</p>
+                    </div>
+                </div>
+                <div class="hd2">
+                    <img src="img/mission2.jpg" alt="mission2">
+                </div>
+                <div class="hd3">
+                    <div class="hp hp1">
+                        <img src="img/rorate.png" alt="rorate">
+                        <img src="img/icon1.png" alt="icon1">
+                        <p>品质行程</p>
+                        <p>旅游达人精心设计、基于口碑反复打磨，<br/>全网最好，敢跟任何产品比</p>
+                    </div>
+                    <div class="hp hp2">
+                        <img src="img/rorate.png" alt="rorate">
+                        <img src="img/icon2.png" alt="icon2">
+                        <p>品质消费</p>
+                        <p>不推自费，<br/>不进垃圾购物店和伪景点</p>
+                    </div>
+                    <div class="hp hp3">
+                        <img src="img/rorate.png" alt="rorate">
+                        <img src="img/icon3.png" alt="icon3">
+                        <p>品质小团</p>
+                        <p>独立成团不散拼，<br/>只跟亲朋好友一起玩，每天发团</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bianxw">
+            <div>
+                <p>使命与愿景：<span>让旅游回归本质，体验纯粹旅游</span></p>
+                <hr>
+            </div>
+            <div class="bhd">
+                <img src="img/mission1.jpg" alt="mission1" class="bhimg">
+                <p class="bhp1">--服务理念--</p>
+                <p class="bhp2" style="line-height: 1.5em; letter-spacing:4px">&nbsp;“英华逸游”通过重新打造旅游全程中的产品线路设计、出行交通方案、陪游向导服务、增值关怀项目等，为客户提供高品质的旅游体验。英华逸游在泰国、欧洲、等多个国家拥有丰富的旅游资源，同时致力于给用户提供性价比高的产品和服务。</p>
+                <img src="img/mission2.jpg" alt="mission2" class="bhimg">
+                <p class="bhp1">--服务优势--</p>
+                <div class="bhdiv1">
+                    <img src="img/icon11.png" alt="icon11" style="margin-top: 60px;">
+                    <p>旅游达人精心设计、基于口碑反复打磨，<br/>告别人山人海鸡肋景点<br/>全网最好，敢跟任何产品比</p>
+                </div>
+                <div class="bhdiv2">
+                    <img src="img/icon22.png" alt="icon22" style="margin-top: 60px;">
+                    <p style="margin-top: 70px;">不推自费，<br/>不进垃圾购物店和伪景点</p>
+                </div>
+                <div class="bhdiv3">
+                    <img src="img/icon33.png" alt="icon33" style="margin-top: 60px;">
+                    <p style="margin-top: 70px;">独立成团不散拼，<br/>只跟亲朋好友一起玩，每天发团</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer>
+        <div id="footer">
+            <div class="fd1">
+                <p>合作伙伴</p>
+                <img src="img/xiecheng.png" alt="xiecheng">
+                <img src="img/feizhu.png" alt="feizhu">
+                <img src="img/quna.png" alt="quna">
+                <img src="img/suzhou.png" alt="suzhou">
+                <p id="fsp">
+                    <span>携程网</span>
+                    <span>阿里飞猪</span>
+                    <span>去哪儿</span>
+                    <span>苏州旅游局</span>
+                </p>
+            </div>
+            <div class="fd2">
+                <p>热门位置</p>
+                <p id="fdp1">韩国 &nbsp;&nbsp;&nbsp; 日本 &nbsp;&nbsp;&nbsp;菲律宾&nbsp;&nbsp; &nbsp;越南&nbsp;&nbsp; &nbsp;老挝&nbsp; &nbsp;&nbsp;柬埔寨 &nbsp;&nbsp;&nbsp;泰国&nbsp; &nbsp;&nbsp;马来西亚&nbsp;&nbsp;&nbsp;新加坡&nbsp;&nbsp; &nbsp;&nbsp;印度尼西亚&nbsp; &nbsp;&nbsp;印度&nbsp; &nbsp;&nbsp;&nbsp;斯里兰卡&nbsp;&nbsp;
+                    &nbsp;&nbsp;土耳其&nbsp; &nbsp;&nbsp;阿联酋 &nbsp;&nbsp;&nbsp;西班牙&nbsp; &nbsp;&nbsp;意大利&nbsp; &nbsp;&nbsp;希腊&nbsp;&nbsp; &nbsp;法国&nbsp; &nbsp;&nbsp;比利时&nbsp; &nbsp;&nbsp;荷兰 英国 &nbsp;&nbsp;&nbsp;瑞士&nbsp;&nbsp;&nbsp; 奥地利&nbsp;&nbsp;&nbsp;
+                    德国&nbsp; &nbsp;&nbsp;匈牙利&nbsp;&nbsp; &nbsp;俄罗斯&nbsp;&nbsp; &nbsp;捷克 &nbsp;&nbsp;&nbsp;芬兰&nbsp;&nbsp; &nbsp;葡萄牙&nbsp;&nbsp; &nbsp;冰岛&nbsp;&nbsp;&nbsp;美国&nbsp;&nbsp;&nbsp;加拿大&nbsp; &nbsp;&nbsp;巴西&nbsp; &nbsp;&nbsp;阿根廷 &nbsp;&nbsp;&nbsp;澳大利亚
+                    &nbsp;&nbsp;&nbsp;新西兰
+                </p>
+            </div>
+            <div class="fd3">
+                <p>主题服务</p>
+                <p>海岛度假&nbsp; &nbsp;&nbsp; 历史文化&nbsp; &nbsp;&nbsp;探索冒险 &nbsp; &nbsp;&nbsp;美食购物 &nbsp; &nbsp;&nbsp;都市生活&nbsp; &nbsp;&nbsp; 海外游学&nbsp; &nbsp;&nbsp; 邮轮度假 &nbsp; &nbsp;&nbsp;蜜月摄影 &nbsp; &nbsp;&nbsp;亲子乐园</p>
+            </div>
+            <div class="fd4">
+                <p>友情链接</p>
+                <p>马蜂窝&nbsp; &nbsp;&nbsp; 穷游 &nbsp; &nbsp;&nbsp;booking &nbsp; &nbsp;&nbsp;苏州旅游局&nbsp; &nbsp;&nbsp; 驴友网 &nbsp;&nbsp;吾爱全球签证中心&nbsp; &nbsp;&nbsp; 酒店团购&nbsp; &nbsp;&nbsp; 携程旅游攻略 &nbsp; &nbsp;&nbsp;天巡职航在线 &nbsp; &nbsp;&nbsp;满天飞旅游网&nbsp; &nbsp;&nbsp;
+                    中国旅游网 &nbsp; &nbsp;&nbsp;澳乐网 &nbsp; &nbsp;&nbsp;背包兔旅游行程&nbsp; 出境旅游&nbsp; &nbsp;&nbsp; 国际酒店 &nbsp; &nbsp;&nbsp;州旅行社&nbsp; &nbsp;&nbsp; 出境旅游 &nbsp; &nbsp;&nbsp;517旅行 &nbsp; &nbsp;&nbsp;花生游 &nbsp; &nbsp;&nbsp;家园网 &nbsp; &nbsp;&nbsp;海外婚礼</p>
+            </div>
+            <div class="footer-line">
+                <div id="line1"></div>
+            </div>
+            <div class="fd5">
+                <p>2020 &nbsp; @苏州英华国际旅游有限公司 &nbsp; 版权所有</p>
+            </div>
+        </div>
+
+
+        <div id="bianfooter">
+            <p>苏ICP备号、2020<br/>@苏州英华国际旅游有限公司 &nbsp; 版权所有<br/>技术支持&nbsp; 杭州科技</p>
+        </div>
+    </footer>
+</body>
+
+
+</html>
